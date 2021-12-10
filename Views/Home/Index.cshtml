@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Passcode</title>
-</head>
-<body>
-    <h3>Random passcode (passcode #1)</h3>
-    <a href="Index"><button>Generate</button></a>
-</body>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Passcode</title>
+    </head>
+    
+    <body>
+        <div id="container" style="width: 500px; height: 300px; background-color: black; margin-left: 700px;">
+            <h1 style="padding-top: 30px; text-align: center; color: lightblue;">Random Passcode (passcode #@ViewBag.Count)</h1>
+            
+            <h3 style="text-align: center; margin-top: 50px; color: lightblue; font-size: 30px;">@ViewBag.Count</h3>
+            
+            <a href="/new_passcode"><button style="font-size: 35px; margin-left: 170px; color: black; margin-top: 25px;">Generate</button></a>
+        </div>
+    </body>
+
 </html>
